@@ -2,30 +2,58 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Logo {
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Header {
+  width: 100%;
+  height: auto;
+}
+.Logo {
+  width: 50px;
+  height: 50px;
+  
+}
+.Title {
+  font-family: 'Arial', sans-serif;
+}
+.Carrer, .Name {
+  margin: 5px;
+  padding: 5px;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.Nav {
+  padding: 10px;
+}
+.ListUnorder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ListUnorder li {
+  padding: 5px;
+  list-style: none;
+}
+.ListUnorder li a {
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.ListUnorder li a:hover {
+  opacity: 0.5;
+}
+.ListUnorder li a:focus {
+  border: 1px solid green;
+  color: white;
+  background-color: green;
 }
 
 @keyframes App-logo-spin {
