@@ -33,13 +33,14 @@ html {
 
 .Title {
   font-family: 'Arial', sans-serif;
+  font-size: 1.6rem;
 }
 
 .Carrer {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 10px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #fafafa;
 }
 
@@ -60,7 +61,7 @@ html {
   width: 200px;
   height: 30px;
   margin: 0 20px;
-  font-size: 12px;
+  font-size: 1.4rem;
   color: #fafafa;
   text-decoration: none;
 }
@@ -101,16 +102,17 @@ html {
 
 .Description {
   text-align: center;
-  font-size: 1rem
+  font-size: 1.2rem
 }
 
 .Title-Projects {
+  font-size: 1.4rem;
   padding: 20px 0;
   text-align: center;
 }
 
 .Profile-title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
   color: #000;
 }
@@ -130,7 +132,26 @@ html {
 }
 
 .Project-Description {
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+
+.Animation-Container {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.Arrow-Down {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  display: none;
+}
+
+.Article-Project:hover .Arrow-Down {  
+  animation: Click-Sugest infinite 0.5s linear;
+  display: block;
 }
 
 .Project-Link {
@@ -194,5 +215,14 @@ html {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes Click-Sugest {
+  from {
+    transform: translate(0, 0);
+  } 
+  to {
+    transform: translate(0, 10px)
   }
 }
