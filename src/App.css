@@ -10,29 +10,34 @@
 
 .Header {
   width: 100%;
-  height: auto;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  background-color: #23235a;
 }
+
 .Logo {
   width: 50px;
   height: 50px;
   
 }
+
 .Title {
   font-family: 'Arial', sans-serif;
 }
-.Carrer, .Name {
+
+.Carrer {
   margin: 5px;
   padding: 5px;
   font-size: 14px;
+  color: #fafafa;
 }
 
 .Nav {
   padding: 10px;
 }
+
 .ListUnorder {
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -40,20 +45,43 @@
   padding: 5px;
   list-style: none;
 }
+
 .ListUnorder li a {
   width: 200px;
   height: 30px;
+  margin: 0 5px;
   font-size: 12px;
+  color: #fafafa;
   text-decoration: none;
 }
 
 .ListUnorder li a:hover {
   opacity: 0.5;
 }
+
 .ListUnorder li a:focus {
   border: 1px solid green;
   color: white;
   background-color: green;
+}
+
+.Profile-Pic {
+  width: 100px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.Description {
+  width: 288px;
+  margin: 0 auto;
+  margin-bottom: 30px
+}
+
+.Profile-title {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  color: #000;
 }
 
 @keyframes App-logo-spin {
