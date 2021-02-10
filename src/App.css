@@ -1,7 +1,17 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
+html {
+  font-size: 62.5%;
+}
+/* .App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .Logo {
     animation: App-logo-spin infinite 5s linear;
@@ -10,14 +20,15 @@
 
 .Header {
   width: 100%;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
   background-color: #23235a;
 }
 
 .Logo {
   width: 50px;
-  height: 50px;
-  
+  height: 50px;  
 }
 
 .Title {
@@ -25,14 +36,14 @@
 }
 
 .Carrer {
-  margin: 5px;
-  padding: 5px;
-  font-size: 14px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
   color: #fafafa;
 }
 
 .Nav {
-  padding: 10px;
 }
 
 .ListUnorder {
@@ -42,14 +53,13 @@
 }
 
 .ListUnorder li {
-  padding: 5px;
   list-style: none;
 }
 
 .ListUnorder li a {
   width: 200px;
   height: 30px;
-  margin: 0 5px;
+  margin: 0 20px;
   font-size: 12px;
   color: #fafafa;
   text-decoration: none;
@@ -65,25 +75,119 @@
   background-color: green;
 }
 
+.Main {
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: #e2e2e2;
+}
+
+.Aside {
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.Pic-Container {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
 .Profile-Pic {
   width: 100px;
-  height: 200px;
-  border-radius: 50%;
+  opacity: 0.7;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Description {
-  width: 288px;
-  margin: 0 auto;
-  margin-bottom: 30px
+  text-align: center;
+  font-size: 1rem
+}
+
+.Title-Projects {
+  padding: 20px 0;
+  text-align: center;
 }
 
 .Profile-title {
-  margin: 10px;
-  padding: 5px;
-  font-size: 16px;
+  font-size: 1.2rem;
+  text-align: center;
   color: #000;
 }
 
+.Article-Project {
+  width: 300px; 
+  padding: 10px 5px 20px;
+  border-radius: 5px;
+  margin: 0 auto 10px;
+  text-align: center;
+  background-color: #fafafa;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Project-Title {
+  margin-bottom: 10px;
+}
+
+.Project-Description {
+  margin-bottom: 20px;
+}
+
+.Project-Link {
+  padding: 5px 10px;
+  border-bottom: 3px solid #161637;
+  border-radius: 5px;
+  background-color: #23235a;
+  text-decoration: none;
+}
+
+.Project-Link:hover {
+  transform: scale(1.2);
+}
+
+.Project-Link span {
+  color: #fff;
+  font-weight: lighter;
+}
+.Footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #23235a;
+}
+
+.Footer-title {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.Icons-Container {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.Icon-Link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.Icon-Link:hover {
+  opacity: 0.7;
+}
+.Icons {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+.Icon-Link span {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
