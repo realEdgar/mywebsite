@@ -6,24 +6,26 @@
 html {
   font-size: 62.5%;
 }
-/* .App {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-} */
+body {
+  background-color: #27276b;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .Logo {
     animation: App-logo-spin infinite 5s linear;
   }
 }
-
+.Container {
+  display: grid;
+  grid-template: 15vh 70vh 15vh / 1fr;
+}
 .Header {
   width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
-  background-color: #23235a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Logo {
@@ -31,39 +33,44 @@ html {
   height: 50px;  
 }
 
-.Title {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.6rem;
-}
-
 .Carrer {
-  width: 90%;
   margin: 0 auto;
   margin-bottom: 10px;
-  font-size: 1.6rem;
-  color: #fafafa;
+  font-size: 2.4rem;
+  font-style: oblique;
+  color: #06a906;
 }
 
 .Nav {
+  width: 100%;
+  height: auto;
 }
 
 .ListUnorder {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .ListUnorder li {
+  width: 200px;
+  height: 30px;
+  margin: 20px;  
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
+  background-color: #4a1919;
 }
 
 .ListUnorder li a {
-  width: 200px;
-  height: 30px;
-  margin: 0 20px;
   font-size: 1.4rem;
-  color: #000;
+  color: #fafafa;
   text-decoration: none;
 }
 
@@ -84,11 +91,16 @@ html {
 }
 
 .Aside {
-  width: 90%;
-  padding: 20px 0;
-  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr / 0.5fr 0.5fr;
 }
 
+.Aside-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .Pic-Container {
   width: 100%;
   padding: 30px;
@@ -97,13 +109,16 @@ html {
 
 .Profile-Pic {
   width: 100px;
-  opacity: 0.7;
+  opacity: 0.8;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Description {
+  width: 80%;
   text-align: center;
-  font-size: 1.2rem
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #fafafa;
 }
 
 .Title-Projects {
@@ -113,9 +128,8 @@ html {
 }
 
 .Profile-title {
-  font-size: 1.4rem;
-  text-align: center;
-  color: #000;
+  font-size: 2rem;
+  color: #06a906;
 }
 
 .Article-Project {
@@ -173,7 +187,6 @@ html {
 .Footer {
   width: 100%;
   padding: 10px;
-  background-color: #23235a;
 }
 
 .Footer-Contact {
