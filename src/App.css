@@ -49,8 +49,9 @@ html {
 
 .ListUnorder {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .ListUnorder li {
@@ -62,7 +63,7 @@ html {
   height: 30px;
   margin: 0 20px;
   font-size: 1.4rem;
-  color: #fafafa;
+  color: #000;
   text-decoration: none;
 }
 
@@ -135,7 +136,6 @@ html {
   font-size: 1.2rem;
 }
 
-
 .Animation-Container {
   width: 30px;
   height: 30px;
@@ -150,7 +150,7 @@ html {
 }
 
 .Article-Project:hover .Arrow-Down {  
-  animation: Click-Sugest infinite 0.5s linear;
+  animation: Click-Sugest infinite 1s linear;
   display: block;
 }
 
@@ -176,6 +176,10 @@ html {
   background-color: #23235a;
 }
 
+.Footer-Contact {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
 .Footer-title {
   padding: 10px;
   text-align: center;
@@ -208,6 +212,39 @@ html {
   margin-left: 10px;
   font-size: 1.2rem;
   color: #fff;
+}
+
+.Footer-Education, .Experience-Container {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+
+}
+
+.Footer-Education-Title, .Footer-Experience-Title {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.Edu-Container {
+  width: 288px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.Edu-School {
+  font-size: 1.2rem;
+}
+.Edu-Item {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 @keyframes App-logo-spin {
   from {
