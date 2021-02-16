@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #27276b;
+  background-color: #2b2b2b;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -16,9 +16,9 @@ body {
     animation: App-logo-spin infinite 5s linear;
   }
 }
-.Container {
+.root {
   display: grid;
-  grid-template: 15vh 70vh 15vh / 1fr;
+  grid-template: 30vh 60vh 10vh / 1fr;
 }
 .Header {
   width: 100%;
@@ -38,38 +38,36 @@ body {
   margin-bottom: 10px;
   font-size: 2.4rem;
   font-style: oblique;
-  color: #06a906;
+  color: #dc1907;
 }
 
 .Nav {
   width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 
 .ListUnorder {
   width: 100%;
   height: 100%;
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .ListUnorder li {
-  width: 200px;
+  width: 100px;
   height: 30px;
-  margin: 20px;  
-  border: 1px solid white;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
-  background-color: #4a1919;
 }
 
 .ListUnorder li a {
-  font-size: 1.4rem;
+  padding: 10px;
+  font-size: 1.8rem;
   color: #fafafa;
   text-decoration: none;
 }
@@ -78,10 +76,8 @@ body {
   opacity: 0.5;
 }
 
-.ListUnorder li a:focus {
-  border: 1px solid green;
-  color: white;
-  background-color: green;
+.ListUnorder li a.mark {
+  border-bottom: 2px solid #dc1907;
 }
 
 .Main {
@@ -91,11 +87,12 @@ body {
 }
 
 .Aside {
-  display: grid;
-  grid-template: 1fr / 0.5fr 0.5fr;
+  display: flex;
 }
 
 .Aside-left {
+  width: 800px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -114,32 +111,39 @@ body {
 }
 
 .Description {
-  width: 80%;
+  width: 90%;
   text-align: center;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: #fafafa;
+  color: #fff;
 }
 
 .Title-Projects {
-  font-size: 1.4rem;
+  font-size: 2rem;
   padding: 20px 0;
   text-align: center;
+  color: #dc1907;
 }
 
 .Profile-title {
   font-size: 2rem;
-  color: #06a906;
+  color: #dc1907;
+}
+
+.Project-Container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Article-Project {
-  width: 300px; 
+  width: 320px; 
   padding: 10px 5px 20px;
   border-radius: 5px;
   margin: 0 auto 10px;
   text-align: center;
   background-color: #fafafa;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Project-Title {
@@ -147,7 +151,7 @@ body {
 }
 
 .Project-Description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .Animation-Container {
@@ -185,22 +189,66 @@ body {
   font-weight: lighter;
 }
 .Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 10px;
 }
-
-.Footer-Contact {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #fff;
-}
-.Footer-title {
-  padding: 10px;
-  text-align: center;
+.Footer h3 {
   color: #fff;
 }
 
+.Tools-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.React,
+.css3,
+.html5,
+.js {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.React {
+  color: #5ab4f1;
+}
+
+.css3 {
+  color: #0f1f69;
+}
+
+.html5 {
+  color: #de5203;
+}
+.js {
+  color: yellow;
+}
+
+.Footer-Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer-title {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+  color: #dc1907;
+}
+
 .Icons-Container {
-  width: 200px;
+  width: 288px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -217,13 +265,13 @@ body {
   opacity: 0.7;
 }
 .Icons {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   color: #fff;
 }
 .Icon-Link span {
   margin-left: 10px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #fff;
 }
 
@@ -235,17 +283,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #fff;
 
 }
 
 .Footer-Education-Title, .Footer-Experience-Title {
   margin-bottom: 20px;
-  color: #fff;
+  font-size: 2rem;
+  color: #dc1907;
 }
 
 .Edu-Container {
-  width: 288px;
+  width: 400px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #000;
@@ -253,11 +301,15 @@ body {
   background-color: #fff;
 }
 .Edu-School {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .Edu-Item {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
+}
+
+.Edu-Description {
+  font-size: 1.4rem;
 }
 @keyframes App-logo-spin {
   from {

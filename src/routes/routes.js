@@ -5,11 +5,14 @@ import { Section } from '../components/Section'
 import { Education } from '../components/Education'
 import { Experience } from '../components/Experience'
 import { Contact } from '../components/Contact'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const Router = () => {
     return (
         <BrowserRouter basename="/mywebsite">
             <Fragment>
+                <Header />
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/projects" component={Section} />
@@ -18,6 +21,7 @@ const Router = () => {
                     <Route exact path="/contact" component={Contact} />
                     <Redirect from="/p" to="/projects" />
                 </Switch>
+                <Footer />
             </Fragment>
         </BrowserRouter>
     )

@@ -5,27 +5,27 @@ export const Nav = () => {
         <menu className="Nav" >
             <ul className="ListUnorder" >
                 <li>
-                    <NavLink exact to="/">
+                    <NavLink exact to="/" activeClassName="mark">
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/projects">
+                    <NavLink exact to="/projects" activeClassName="mark">
                         Projects
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/education">
+                    <NavLink exact to="/education" activeClassName="mark">
                         Education
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/experience">
+                    <NavLink exact to="/experience" activeClassName="mark">
                         Experience
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/contact">
+                    <NavLink exact to="/contact" activeClassName="mark">
                         Contact
                     </NavLink>
                 </li>

@@ -11,7 +11,7 @@ export const Contact = () => {
             <div className="Icons-Container">
                 <a className="Icon-Link" href="mailto:edg.lop.arr@gmail.com"><IoIosMail className="Icons"/><span>edg.lop.arr@gmail.com</span></a>
                 <a className="Icon-Link" href="#"><TiPhone className="Icons"/><span>+52 461 335 3233</span></a>
-                <a className="Icon-Link" herf="https://github.com/"><GoOctoface className="Icons"/><span>GitHub</span></a>
+                <a className="Icon-Link" href="https://github.com/realEdgar"><GoOctoface className="Icons"/><span>GitHub</span></a>
                 <a className="Icon-Link" href="https://www.linkedin.com/in/edgar-lopez-24a904201/"><AiFillLinkedin className="Icons"/><span>LinkedIn</span></a>
                 <a className="Icon-Link" href="#"><IoLocationSharp className="Icons"/><span>Celaya, Guanajuato, México</span></a>
             </div>
